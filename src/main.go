@@ -27,17 +27,17 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 	
-	botId := os.Getenv("TG_ID")
+	botId := os.Getenv("API_ID")
 	if botId == "" {
 		log.Fatal("API id not found in env")
 	}
 
-	botHash := os.Getenv("TG_HASH")
+	botHash := os.Getenv("API_HASH")
 	if botHash == "" {
 		log.Fatal("API hash not found in env")
 	}
 	
-	botToken := os.Getenv("TG_BOT_TOKEN")
+	botToken := os.Getenv("BOT_TOKEN")
 	if botToken == "" {
 		log.Fatal("Bot token not found in env")
 	}
